@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    .Formdiv1 {
+        border: 5px outset rgb(0, 255, 34);
+        background-color: lightblue;
+        text-align: center;
+      }
+      </style>
+<!--Border has been applied to keep text & elements in allignment. -->
+    
+<div class="Formdiv1">
+    <h1>Good Vibes Form</h1>
+    <br>
+    <h2>Tell us somthing good that happend today</h2>
+    <br>
+    <form action="ttagoodvides.html" method="POST">
+        <lable for="name"> Name:</lable>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <lable for="email"> Email:</lable>
+        <input type="text" id="email" name="email" required>
+        <br><br>
+
+        <!--min and max number vaules have been added to allow user to not go lower than 1 or higher than 10 -->
+        <lable for="On a scale from 1-10, how good was it"> On a scale from 1-10, how good was it:</lable><br><br>
+        <input type="number" id="On a scale from 1-10, how good was it" step="1" value="1" min="1" max="10">
+        <br><br>
+
+        <lable for="Where did it happen"> Where did it happen:</lable>
+        <select name="Where did it happen" id="Where did it happen">
+            <option value="At home">At home</option>
+            <option value="At work">At work</option>
+            <option vaule="Out and about">Out and about</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
+
+      <p>What emotions did you experience</p>
+        <br>
+        <label for="Excited">Excited:</label>
+        <input type="radio" id="Excited" name="Excited" value="Excited">
+        <br>
+        <label for="Humbled">Humbled:</label>
+        <input type="radio" id="Humbled" name="Humbled" value="Humbled">
+        <br>
+        <label for="Elated">Elated:</label>
+        <input type="radio" id="Elated" name="Elated" value="Elated">
+        <br>
+        <label for="Loved">Loved:</label>
+        <input type="radio" id="Loved" name="Loved" value="Loved">
+        <br>
+        <label for="Enthusiastic">Enthusiastic:</label>
+        <input type="radio" id="Enthusiastic" name="Enthusiastic" value="Enthusiastic">
+        <br>
+        <br>
+
+       <p><lable for="Please describe your previous experience">Please describe your previous experience:</lable></p>
+       <textarea></textarea>
+       <br>
+       <input type="submit" value="submit">
+
+    </form>
+</div>
+</body>
+</html>
